@@ -19,10 +19,10 @@ res = []
 #for ip1 in range(2,256):
 #    for ip2 in range(0,256):
 #        ip = "166.104." + str(ip1) + '.' + str(ip2)
-		ip = "166.104.28.50"
-        print('scanning: ' + ip)
-        if scanning_ip(ip) == 'success':
-            res.append(ip)
+ip = "166.104.28.50"
+print('scanning: ' + ip)
+if scanning_ip(ip) == 'success':
+	res.append(ip)
 
 print('result :')
 print(res)
