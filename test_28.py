@@ -19,7 +19,7 @@ res = []
 #for ip1 in range(2,256):
 for ip2 in range(0,256):
     ip = "166.104.28" + '.' + str(ip2)
-	# print('scanning: ' + ip)
+	print('scanning: ' + ip)
 	if scanning_ip(ip) == 'success':
 		res.append(ip)
 
