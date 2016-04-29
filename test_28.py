@@ -15,13 +15,10 @@ def scanning_ip(ip):
         return 'failed'
 
 
-res = []
 for ip2 in range(0,60):
     ip = "166.104.28" + '.' + str(ip2)
     print('scanning: ' + ip)
     if scanning_ip(ip) == 'success':
-        res.append(ip)
-
-f = open("op.txt", "w")
-f.write(ip + "\n");
-f.close()
+        f = open("op.txt", "w")
+        f.write(ip + "\n");
+        f.close()
