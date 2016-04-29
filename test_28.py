@@ -19,6 +19,6 @@ for ip2 in range(0,60):
     ip = "166.104.28" + '.' + str(ip2)
     print('scanning: ' + ip)
     if scanning_ip(ip) == 'success':
-        f = open("op.txt", "w")
+        f = open("op.txt", "a")
         f.write(ip + "\n");
         f.close()
