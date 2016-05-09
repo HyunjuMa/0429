@@ -15,7 +15,7 @@ def scanning_ip(ip):
         return 'failed'
 
 
-for ip1 in range(2,256):
+for ip1 in range(0,256):
     for ip2 in range(0,256):
         ip = "166.104." + str(ip1) + '.' + str(ip2)
         print('scanning: ' + ip)
